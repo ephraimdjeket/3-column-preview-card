@@ -1,0 +1,153 @@
+:root {
+  /* Primary Colors */
+
+  --Bright-orange: hsl(31, 77%, 52%);
+  --Dark-cyan: hsl(184, 100%, 22%);
+  --Very-dark-cyan: hsl(179, 100%, 13%);
+
+  /* Neutral Colors */
+
+  --Transparent-white: hsla(0, 0%, 100%, 0.75); /* paragraphs */
+  --Very-light-gray: hsl(0, 0%, 95%); /* background, headings, buttons */
+
+  /* Body Font */
+
+  --body-font: 15px;
+
+  /* Fonts */
+
+  --Big-Shoulders-Display: "Big Shoulders Display", sans-serif;
+  --Lexend-Deca: "Lexend Deca", sans-serif;
+}
+
+/* CSS Reset */
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--Very-light-gray);
+}
+
+/* Card Backgroundcolor */
+
+.card-one {
+  background-color: var(--Bright-orange);
+  border-radius: 8px 0px 0px 8px;
+}
+
+.card-two {
+  background-color: var(--Dark-cyan);
+}
+
+.card-three {
+  background-color: var(--Very-dark-cyan);
+  border-radius: 0px 8px 8px 0px;
+}
+
+/* Card Content */
+
+.card-wrapper {
+  display: grid;
+  list-style: none;
+  padding: 0;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.card-content {
+  text-align: left;
+  padding: 3rem;
+}
+
+.card {
+  width: 307px;
+}
+
+.card-icon {
+  width: 60px;
+  height: 40px;
+}
+
+.card-content > h1 {
+  font-family: var(--Big-Shoulders-Display);
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: var(--Very-light-gray);
+  padding: 2.188rem 0rem 1.563rem 0rem;
+}
+
+.card-content > p {
+  font-family: var(--Lexend-Deca);
+  color: white;
+  font-size: var(--body-font);
+  max-width: 212px;
+  line-height: 25px;
+  padding-bottom: 5.188rem;
+}
+
+.card-one > .card-content > .learn-more-btn {
+  color: var(--Bright-orange);
+}
+
+.card-two > .card-content > .learn-more-btn {
+  color: var(--Dark-cyan);
+}
+
+.card-three > .card-content > .learn-more-btn {
+  color: var(--Very-dark-cyan);
+}
+
+.learn-more-btn {
+  cursor: pointer;
+  background-color: var(--Very-light-gray);
+  border-radius: 25px;
+  padding: 0.688rem 2.188rem;
+  font-weight: 500;
+  font-family: var(--Lexend-Deca);
+  font-size: var(--body-font);
+}
+
+.card > .card-content > .learn-more-btn:hover {
+  background-color: rgba(255, 255, 255, 0);
+  border: 1px solid white;
+  color: white;
+}
+
+@media screen and (max-width: 57.625em) {
+  body {
+    height: 1502px;
+  }
+
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  /* Card Backgroundcolor */
+
+  .card-one {
+    border-radius: 8px 8px 0px 0px;
+  }
+
+  .card-three {
+    border-radius: 0px 0px 8px 8px;
+  }
+
+  /* Card Content */
+
+  .card-content > p {
+    padding-bottom: 1.563rem;
+  }
+}
