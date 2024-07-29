@@ -68,7 +68,7 @@ For this project I used:
 
 ## Acknowledgments
 
-- I used the provided figma file for this challenge to get it as pixel perfect as possible.
+- I'd like to thank [Grace Snow](https://fedmentor.dev/posts/newbie-fm-challenge-order/) for her recommended Frontend Mentor challenge order for junior devs and inspiration to take on these challenges to improve.
 
 ## Follow Me
 
